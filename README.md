@@ -18,39 +18,3 @@ version of L as shown by the following examples:<br />
 1. (parse ‘()) -> ()
 2. (parse ‘(a b)) -> ((a 1) (b 1))
 3. (parse ‘(a b b b a d d)) -> ((a 2) (b 3) (d 2))
-
-## Exercise 4
-Define a SCHEME function that takes as input a list of pairs of integers and returns a pair
-of integers in which the first element is the sum of all input first elements, while the
-second element is the average of all input second elements.<br />
-
-## Exercise 5
-Define a SCHEME function that takes as input a list of integers and returns a pair in which
-the first elements is the length of the input list and the second element is the
-maximum among the input elements.<br />
-E.g., Input: (1 3 54 7 2 8 65); Output: (7 65)
-
-## Exercise 6
-Given the following SCHEME function, assuming that X and Y are two lists of atoms and
-that each of them does not contain multiple identical atoms<br />
-(define foo (lambda(X, Y)
-  (cond ((null? X) Y)
-        ((member (car X) Y)
-        (#t (cons (car X) (foo (cdr X) Y))
-  )))
-
-a) Which function is computed by foo?
-b) How can the decision coverage criteria be applied to this program?
-c) Is it possible to use a single data test? If yes, provide an example.
-
-## Exercise 7
-Given the following SCHEME function<br />
-(define TEST (lambda (X Y)
-  (cond ((null? X) 'NIL)
-  ((>= (car X) Y) (TEST (cdr X) Y))
-  (#t (cons (car X) (TEST (car X) Y))
-)))
-<br />
-1) Which function is computed by TEST
-2) Modify PROVA so that it works also when X is a list of lists of atoms and Y a list
-of atoms
