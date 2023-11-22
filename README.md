@@ -39,11 +39,11 @@ E.g., Input: (1 3 54 7 2 8 65); Output: (7 65)
 ## Exercise 6
 Given the following SCHEME function, assuming that X and Y are two lists of atoms and
 that each of them does not contain multiple identical atoms<br />
-(define foo (lambda(X, Y)
-  (cond ((null? X) Y)
-        ((member (car X) Y)
-        (#t (cons (car X) (foo (cdr X) Y))
-  )))
+(define foo (lambda(X, Y) <br />
+  (cond ((null? X) Y) <br />
+        ((member (car X) Y) <br />
+        (#t (cons (car X) (foo (cdr X) Y)) <br />
+  ))) <br />
 
 a) Which function is computed by foo?
 b) How can the decision coverage criteria be applied to this program?
@@ -51,10 +51,10 @@ c) Is it possible to use a single data test? If yes, provide an example.
 
 ## Exercise 7
 Given the following SCHEME function<br />
-(define TEST (lambda (X Y)
-  (cond ((null? X) 'NIL)
-  ((>= (car X) Y) (TEST (cdr X) Y))
-  (#t (cons (car X) (TEST (car X) Y))
+(define TEST (lambda (X Y) <br />
+  (cond ((null? X) 'NIL) <br />
+  ((>= (car X) Y) (TEST (cdr X) Y)) <br />
+  (#t (cons (car X) (TEST (car X) Y)) <br />
 )))
 <br />
 1) Which function is computed by TEST
