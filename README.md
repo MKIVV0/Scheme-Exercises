@@ -18,3 +18,9 @@ version of L as shown by the following examples:<br />
 1. (parse ‘()) -> ()
 2. (parse ‘(a b)) -> ((a 1) (b 1))
 3. (parse ‘(a b b b a d d)) -> ((a 2) (b 3) (d 2))
+
+## Exercise 4
+Define a SCHEME function that takes as input a list of pairs of integers and returns a pair
+of integers in which the first element is the sum of all input first elements, while the
+second element is the average of all input second elements.<br />
+
