@@ -24,3 +24,8 @@ Define a SCHEME function that takes as input a list of pairs of integers and ret
 of integers in which the first element is the sum of all input first elements, while the
 second element is the average of all input second elements.<br />
 
+## Exercise 5
+Define a SCHEME function that takes as input a list of integers and returns a pair in which
+the first elements is the length of the input list and the second element is the
+maximum among the input elements.<br />
+E.g., Input: (1 3 54 7 2 8 65); Output: (7 65)
