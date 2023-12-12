@@ -7,10 +7,10 @@
 #| As for the inductive case:
 #  the operator * is a function that takes two parameters; in this particular
 #  case, x and the following expression, i.e. (fact (- x 1)). The same reasoning 
-# applies the latter expression.
-# If we want to consider an expression as an argument, then it has to be written  
-# between parenthesis, so that it is first evaluated, and then used as an argument by 
-# the external expression.
+#  applies the latter expression.
+#  If we want to consider an expression as an argument, then it has to be written  
+#  between parenthesis, so that it is first evaluated, and then used as an argument by 
+#  the external expression.
 |#
 (define factorial (lambda (x)
     (cond
@@ -24,7 +24,7 @@
 ; Given a lower-bound and an upper-bound, starting from the former, sum up all the values.
 #| 
 # It is assumed that lower < upper, so this case is not treated. 
-#  Another reason is to maintain an inductive structure, which comprises one (or more) base case(s)
+# Another reason is to maintain an inductive structure, which comprises one (or more) base case(s)
 # and an inductive case.
 |#
 (define sum (lambda (lower upper)
